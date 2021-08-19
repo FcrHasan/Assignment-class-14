@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mid_content{
+    width: 1170px;
+    margin: auto;
+}
+header ul{
+    text-align: center;
+    padding: 20px;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: #3BCDFB;
+    color: rgb(0, 0, 0);
+    position: relative;
+    transition: .6s;
+    font-weight: 800;
+}
+header ul li a::after{
+    content: '';
+    position:absolute;
+    left: 19px;
+    top: 71%;
+    height: 2px;
+    width: 0%;
+    background-color: #3D4042;
+    transition: .6s;
+}
+header ul li a:hover::after{
+    width: 65%;
+}
+header ul li a:hover{
+    background-color: White;
+    color:#1dcdec;
+}
+
+/* Banner Section */
+
+.banner_section{
+    text-align: center;
+    background: #39CDFB;
+    padding: 100px 0;
+    color: White;
+}
+.banner_section h1{
+    padding: 20px 0;
+    font-size: 45px;
+    font-weight: 400;
+}
+.banner_section a{
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(141, 140, 140);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.banner_section a:hover{
+    color: white;
+}
+.banner_section a::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: -1;
+    transition: .5s;
+    transform: scaleX(0);
+    transform-origin: left center;
+}
+.banner_section a:hover::after{
+    transform: scaleX(1);
+}
+
+/* About Section */
+
+.about_section{
+    text-align: center;
+    background-color: #f7f9f9;
+    padding: 100px 0;
+}
+.about_section p{
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+.about_section .image{
+    width: 23%;
+    margin: 8px .8%;
+    display: inline-block;
+    overflow: hidden;
+}
+.about_section .image img{
+    max-width: 100%;
+    transition: .5s;
+}
+.about_section .image:nth-child(2):hover img{
+    transform: rotate(360deg);
+}
+.about_section .image:nth-child(3):hover img{
+    transform: rotate(25deg);
+}
+.about_section .image:nth-child(4):hover img{
+    transform: rotate(-25deg);
+}
+.about_section .image:nth-child(5):hover img{
+    transform: rotate(-25deg);
+}
+.about_section .image:nth-child(6):hover img{
+    transform: rotate(25deg);
+}
+.about_section .image:nth-child(7):hover img{
+    transform: rotate(360deg);
+}
+.about_section .image:nth-child(8):hover img{
+    transform: scale(1.2) rotate(8deg);
+}
+.about_section .image:nth-child(9):hover img{
+    transform: scale(1.2) rotate(-8deg);
+}
+
+/* Help Section */
+
+.help_section{
+    text-align: center;
+    padding: 50px 0 0 0;
+    background-color: #f7f9f9;
+}
+.help_section h1{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 500;
+}
+.help_section p{
+    line-height: 27px;
+    font-size: 17px;
+    color: rgb(118, 118, 118);
+    padding: 20px 0;
+}
+
+.help_section .step{
+    padding: 15px 20px;
+    display: inline-block;
+    background: #000;
+    color: white;
+    margin: 0 13%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    transition: .5s;
+    font-weight: 600;
+}
+.help_section .step1{
+    transform: rotate(-50deg);
+}
+.help_section .step3{
+    transform: rotate(50deg);
+}
+
+.help_section .step1:hover{
+    transform: rotate(0deg) scale(1.2);
+    background: #39CDFB;
+    color: #000;
+}
+.help_section .step2:hover{
+    background: #39CDFB;
+    transform: scale(1.2);
+    color: #000;
+}
+.help_section .step3:hover{
+    transform: rotate(0deg) scale(1.2);
+    background: #39CDFB;
+    color: #000;
+}
+
+/* Footer Section */
+
+.footer_section{
+    padding: 30px 0;
+    background: #000;
+    color: white;
+    text-align: center;
+}
+.footer_section a{
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+}
